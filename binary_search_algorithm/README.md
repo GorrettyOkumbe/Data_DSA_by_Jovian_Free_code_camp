@@ -15,4 +15,8 @@ In our case the number 2 is at index position 0. say our list is called "locate_
 
 In binary search you first ought to dertemine the mid point(using indexes) and if the number you are searching for is same as that located in the middle then return mid.<br>
 Otherwise compare if the number at the middle to the number you are looking for in an ascending list like in our case, the mid index is 2 with the number 5 occupying that position.<br>
-But we stated that we are searching for the number 2 comparing 5 to 2: 5 > 2 so the number lies on the first half of the list hence we discard the 2nd half.Repeat the above processon the first half of the list.Until the number is located.
+But we stated that we are searching for the number 2 comparing 5 to 2: 5 > 2 so the number lies on the first half of the list hence we discard the 2nd half.Repeat the above processon the first half of the list.Until the number is located.<br>
+Just how is the mid calculated??<br>
+mid = (hi + lo) // 2 where `hi` is `len(locate_num) - 1` that being the last index of the list and `lo` is `0`.<br>
+Note: The above high and low are relevant when determining the initial mid point and tend to change as you discard half the list depending on the problem statement.<br>
+The `binary search algorithm` runs on `O(log n)` for time complexity and `O(1)` for the space complexity on a worst case senarion and is quite fast as compared to linear algorithm .<br>
